@@ -1,0 +1,39 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Purpose
+
+This is a dotfiles/conventions repository — there is no application to build, no tests to run, and no dependencies to install. It contains shared naming standards and workflow rules referenced across three projects:
+
+| Project | Stack |
+|---------|-------|
+| **OrcaFit** | Vue, Astro, Markdown |
+| **OpenTrail** | Quasar, Supabase, PowerSync, FastAPI, FastMCP, OpenStreetMap |
+| **Family Budget** | Quasar, Supabase, PowerSync, FastAPI, FastMCP, UK Open Banking |
+
+## Rules Directory
+
+All conventions live in `rules/`. Each file covers naming standards for one technology — not architecture or structure, only what things are called and how they are cased.
+
+| File | Governs |
+|------|---------|
+| `rules/git.md` | Branch names, Conventional Commits format, PR/MR process, tags |
+| `rules/vue.md` | Component prefixes (`Base`, `The`), composables (`useXxx`), props, events, Pinia stores |
+| `rules/astro.md` | `.astro` components, pages, layouts, content collections, frontmatter fields |
+| `rules/quasar.md` | Pages (`XxxPage`), layouts (`XxxLayout`), boot files, Capacitor conventions |
+| `rules/supabase.md` | Tables (snake_case plural), columns, FK patterns, RLS policy names, edge functions |
+| `rules/powersync.md` | Schema variables, YAML bucket definition names, TypeScript integration |
+| `rules/fastapi.md` | Route handlers (`get_`, `list_`, `create_`), Pydantic model suffixes, dependencies |
+| `rules/fastmcp.md` | Tools (snake_case verb-first), resource URI schemes, prompt names |
+
+## Git Conventions
+
+All commits in this repo follow Conventional Commits (`<type>(<scope>): <description>`). See `rules/git.md` for the full specification — that file is the authoritative source and applies to all projects in this ecosystem.
+
+## Modifying Rules
+
+- Edit the relevant file in `rules/` directly
+- Rules files are markdown — keep them concise and example-driven
+- Do not add architectural guidance to these files; they cover naming only
+- When a technology spans multiple projects (e.g. Supabase, FastAPI), the rule in this repo is the single source of truth
