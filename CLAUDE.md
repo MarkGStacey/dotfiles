@@ -14,18 +14,18 @@ This is a dotfiles/conventions repository — there is no application to build, 
 
 ## Rules Directory
 
-All conventions live in `rules/`. Each file covers naming standards for one technology — not architecture or structure, only what things are called and how they are cased.
+All conventions live in `.claude/rules/`. Each file covers naming standards for one technology — not architecture or structure, only what things are called and how they are cased.
 
 | File | Governs |
 |------|---------|
-| `rules/git.md` | Branch names, Conventional Commits format, PR/MR process, tags |
-| `rules/vue.md` | Component prefixes (`Base`, `The`), composables (`useXxx`), props, events, Pinia stores |
-| `rules/astro.md` | `.astro` components, pages, layouts, content collections, frontmatter fields |
-| `rules/quasar.md` | Pages (`XxxPage`), layouts (`XxxLayout`), boot files, Capacitor conventions |
-| `rules/supabase.md` | Tables (snake_case plural), columns, FK patterns, RLS policy names, edge functions |
-| `rules/powersync.md` | Schema variables, YAML bucket definition names, TypeScript integration |
-| `rules/fastapi.md` | Route handlers (`get_`, `list_`, `create_`), Pydantic model suffixes, dependencies |
-| `rules/fastmcp.md` | Tools (snake_case verb-first), resource URI schemes, prompt names |
+| `.claude/rules/git.md` | Branch names, Conventional Commits format, PR/MR process, tags |
+| `.claude/rules/vue.md` | Component prefixes (`Base`, `The`), composables (`useXxx`), props, events, Pinia stores |
+| `.claude/rules/astro.md` | `.astro` components, pages, layouts, content collections, frontmatter fields |
+| `.claude/rules/quasar.md` | Pages (`XxxPage`), layouts (`XxxLayout`), boot files, Capacitor conventions |
+| `.claude/rules/supabase.md` | Tables (snake_case plural), columns, FK patterns, RLS policy names, edge functions |
+| `.claude/rules/powersync.md` | Schema variables, YAML bucket definition names, TypeScript integration |
+| `.claude/rules/fastapi.md` | Route handlers (`get_`, `list_`, `create_`), Pydantic model suffixes, dependencies |
+| `.claude/rules/fastmcp.md` | Tools (snake_case verb-first), resource URI schemes, prompt names |
 
 ## Git Conventions
 

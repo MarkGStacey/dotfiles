@@ -12,15 +12,15 @@ Shared rules and conventions for the MarkGStacey project ecosystem.
 
 ## Rules
 
-The `rules/` directory contains conventions applied across all projects.
+The `.claude/rules/` directory contains conventions applied across all projects.
 
 | File | Contents |
 |------|----------|
-| `rules/git.md` | Branch naming, commit format, PR process |
-| `rules/vue.md` | Component, composable, store, and CSS naming |
-| `rules/astro.md` | Component, page, layout, and content collection naming |
-| `rules/quasar.md` | Page, layout, store, route, and boot file naming |
-| `rules/supabase.md` | Table, column, function, policy, and storage naming |
-| `rules/powersync.md` | Schema, bucket definition, and sync rule naming |
-| `rules/fastapi.md` | Router, model, handler, and dependency naming |
-| `rules/fastmcp.md` | Server, tool, resource, and prompt naming |
+| `.claude/rules/git.md` | Branch naming, commit format, PR process |
+| `.claude/rules/vue.md` | Component, composable, store, and CSS naming |
+| `.claude/rules/astro.md` | Component, page, layout, and content collection naming |
+| `.claude/rules/quasar.md` | Page, layout, store, route, and boot file naming |
+| `.claude/rules/supabase.md` | Table, column, function, policy, and storage naming |
+| `.claude/rules/powersync.md` | Schema, bucket definition, and sync rule naming |
+| `.claude/rules/fastapi.md` | Router, model, handler, and dependency naming |
+| `.claude/rules/fastmcp.md` | Server, tool, resource, and prompt naming |
