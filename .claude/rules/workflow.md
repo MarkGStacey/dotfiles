@@ -6,8 +6,7 @@ For any non-trivial task (more than one file changed, or more than one logical s
 
 1. **Write a plan first** — use Plan mode to produce a step-by-step breakdown before touching any files
 2. **Check for an existing plan** — before starting work, inspect the current todo list and any in-progress tasks; if a partial plan exists, resume from where it left off rather than starting over
-3. **Keep the plan updated** — mark each task `in_progress` before starting it and `completed` immediately after finishing it; never batch updates
-4. **One task in progress at a time** — only one todo item should be `in_progress` at any moment
+3. **Keep the plan updated** — mark tasks `completed` as they finish so the plan always reflects current progress; batching updates is fine when steps run together, but the plan must be accurate enough to resume from if interrupted
 
 ## When a Plan Is Required
 
