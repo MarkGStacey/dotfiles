@@ -14,10 +14,11 @@ This is a dotfiles/conventions repository — there is no application to build, 
 
 ## Rules Directory
 
-All conventions live in `.claude/rules/`. Each file covers naming standards for one technology — not architecture or structure, only what things are called and how they are cased.
+All conventions live in `.claude/rules/`. Naming standard files cover only what things are called and how they are cased — not architecture or structure. The workflow file covers how Claude should approach and execute tasks.
 
 | File | Governs |
 |------|---------|
+| `.claude/rules/workflow.md` | Planning before execution, resuming interrupted tasks, todo list discipline |
 | `.claude/rules/git.md` | Branch names, Conventional Commits format, PR/MR process, tags |
 | `.claude/rules/vue.md` | Component prefixes (`Base`, `The`), composables (`useXxx`), props, events, Pinia stores |
 | `.claude/rules/astro.md` | `.astro` components, pages, layouts, content collections, frontmatter fields |
@@ -35,5 +36,6 @@ All commits in this repo follow Conventional Commits (`<type>(<scope>): <descrip
 
 - Edit the relevant file in `rules/` directly
 - Rules files are markdown — keep them concise and example-driven
-- Do not add architectural guidance to these files; they cover naming only
+- Naming rules cover naming only — do not add architectural guidance to them
+- Workflow rules (`workflow.md`) cover how Claude executes tasks — keep them process-focused, not technology-specific
 - When a technology spans multiple projects (e.g. Supabase, FastAPI), the rule in this repo is the single source of truth
