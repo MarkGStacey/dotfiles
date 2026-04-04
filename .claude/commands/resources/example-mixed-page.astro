@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PricingCalculator from '../components/vue/PricingCalculator.vue';
+
+const title = 'Pricing';
+const description = 'Transparent pricing with an interactive calculator.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main>
+    <section>
+      <h1>Pricing</h1>
+      <p>Choose the plan that fits your team. The comparison table is static for speed and SEO.</p>
+    </section>
+
+    <section>
+      <h2>Plan comparison</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Users</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Starter</td>
+            <td>Up to 5</td>
+            <td>$29</td>
+          </tr>
+          <tr>
+            <td>Growth</td>
+            <td>Up to 20</td>
+            <td>$99</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Estimate your cost</h2>
+      <!-- Vue island: interactive calculator requires client state. client:visible chosen because it is below the fold. -->
+      <PricingCalculator client:visible basePrice={29} includedUsers={5} />
+    </section>
+  </main>
+</BaseLayout>

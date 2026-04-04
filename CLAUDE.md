@@ -22,11 +22,22 @@ All conventions live in `.claude/rules/`. Naming standard files cover only what 
 | `.claude/rules/git.md` | Branch names, Conventional Commits format, PR/MR process, tags |
 | `.claude/rules/vue.md` | Component prefixes (`Base`, `The`), composables (`useXxx`), props, events, Pinia stores |
 | `.claude/rules/astro.md` | `.astro` components, pages, layouts, content collections, frontmatter fields |
+| `.claude/rules/astro-vue.md` | Astro + Vue integration boundaries, hydration directive conventions, component placement |
 | `.claude/rules/quasar.md` | Pages (`XxxPage`), layouts (`XxxLayout`), boot files, Capacitor conventions |
 | `.claude/rules/supabase.md` | Tables (snake_case plural), columns, FK patterns, RLS policy names, edge functions |
 | `.claude/rules/powersync.md` | Schema variables, YAML bucket definition names, TypeScript integration |
 | `.claude/rules/fastapi.md` | Route handlers (`get_`, `list_`, `create_`), Pydantic model suffixes, dependencies |
 | `.claude/rules/fastmcp.md` | Tools (snake_case verb-first), resource URI schemes, prompt names |
+
+## Commands (Skills)
+
+Reusable skills live in `.claude/commands/`. Invoke them with `/<command-name>` in Claude Code.
+
+| Command | Purpose |
+|---------|---------|
+| `/astro-vue-architect` | Architectural guidance for Astro + Vue projects: hydration decisions, component audits, scaffolding, refactoring |
+
+Supporting example files live in `.claude/commands/resources/`.
 
 ## Git Conventions
 
